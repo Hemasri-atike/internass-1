@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #654321; 
+    padding: 15px 30px;
+    display: flex;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    margin: 15px;
+  justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+ul li a {
+    justify-content: space-around;
+    /* justify-content: center; */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    gap: 50px;
+}
+
+ ul li a:hover {
+    color: #FFD700; 
+} 
+ .jar{
+
+    display: flex;
+    margin-left:300px;
+justify-content: space-around;
+gap: 70px;
+    
+}
+.menu p{
+    margin: 20px;
+    padding: 50px;
+    font-size: larger;
+}
+.menu button{
+   box-sizing: border-box;
+   width: 150px;
+   justify-content: center;
+margin: 40px;
+   
+    background-color: #6543217b;
+}
+/* .menu  h2, p{
+    padding: 50px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+} */
+
+.menu{
+    margin: 3px;
+    padding: 30px;
+
+    width: 100%;
+   /* background-color: aqua; */
+   justify-content: center;
+   height: 500px;
+   font-weight: 300;
+color: black;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url("https://img.freepik.com/free-photo/top-view-cup-coffee-with-copy-space_23-2148255031.jpg?t=st=1738780338~exp=1738783938~hmac=bbb32d81ee6569d3be560a71500baf016219b1508866fc395726b65e1e63a5ca&w=1480");
+
+}
+.card img{
+    height: 200px;
+    width: 200px;
+    border-radius: 30px;
+}
+.card h4{
+    justify-content: center;
+}
+.card p{
+   text-align: center;
+    font-weight: 5px;
+
+}
+.card span{
+    justify-content: center;
+    align-items: center;
+   
+}
+/* menu section */
+.card{
+    padding: 10px;
+   /* border: 2px solid black; */
+   width: 200px;
+   height: 350px;
+   margin: 10px;
+   text-align: center;
+ border-radius: 30px solid rgb(199, 255, 192);
+ justify-content: center;
+ align-items: center;
+   
+   
+ 
+}
+.coffee{
+    margin: 60px;
+}
+.menu-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+.coffee h2{
+    align-items: center;
+    font-weight: 600;
+   text-align: center;
+   padding: 10px;
+   margin: 10px;
+}
+/* about */
+.about{
+
+    display: flex;
+   border: 2px solid black;
+   padding: 10px;
+   margin: 10px;
+}
+/* contact */
+.contact{
+    height: 300px;
+    margin: auto;
+    width: 50%;
+   background-size: cover;
+    padding: 10px;
+    background-image: url("https://img.freepik.com/free-photo/top-view-cup-coffee-with-grain_23-2148170746.jpg?t=st=1738773712~exp=1738777312~hmac=b564a8b68377fc6ce58d6838c38375a0e9d984ff55e668144564f1b70bcc1420&w=1060");
+    
+
+}
+.contact button{
+    border-radius: 30%;
+    background-color: rgba(165, 42, 42, 0.367);
+    
+}
+.footer{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    padding: 10px;
+    margin: 20px;
+    width: 100%;
+   justify-content: space-evenly;
+   background-color: #6543217d;
+   height: 250px;
+}
+ .about h4{
+   font-weight: 1500;
+   font-size: 30px;
+   align-items: center;
+   text-align: center;
+}
+/* Media Queries */
+/* @media only screen and (max-width: 600px) {
+   nav ul li a{
+
+   }
+  } */
+   /* Default styles (Your existing styles will apply for large screens) */
+
+/* Laptop Screens (1024px - 1366px) */
+@media only screen and (max-width: 1366px) {
+    .jar {
+        margin-left: 200px;
+        gap: 50px;
+    }
+    .menu-section {
+        gap: 50px;
+    }
+    .contact {
+        width: 60%;
+    }
+    .footer {
+        gap: 40px;
+    }
+}
+
+/* Tablet Screens (768px - 1023px) */
+@media only screen and (max-width: 1023px) {
+    .jar {
+        margin-left: 100px;
+        gap: 30px;
+    }
+    .menu {
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+    .menu-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .about-image img {
+        width: 80%;
+        margin: auto;
+    }
+    .contact {
+        width: 80%;
+        padding: 20px;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        height: auto;
+    }
+}
+
+/* Mobile Screens (up to 767px) */
+@media only screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo img {
+        width: 40px;
+        margin: auto;
+    }
+    .jar {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 15px;
+    }
+    .menu {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .menu-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .card {
+        width: 90%;
+        height: auto;
+    }
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-image img {
+        width: 100%;
+    }
+    .contact {
+        width: 90%;
+        text-align: center;
+        padding: 15px;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        height: auto;
+    }
+}
